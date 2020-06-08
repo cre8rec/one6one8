@@ -254,7 +254,7 @@ color: #23272A;
 
 
 
-@media screen and (min-width: 480px){
+/* @media screen and (min-width: 480px){ */
 
   .slide{
     width: 100vw;
@@ -290,7 +290,7 @@ color: #23272A;
   }
 
 
-  
+ /*  
   
 }
 
@@ -345,3 +345,4 @@ color: #23272A;
   }
 
 }
+ */
