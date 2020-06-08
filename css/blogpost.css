@@ -329,7 +329,7 @@ h1{
   }
   
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 480px){
 
 
 
@@ -392,21 +392,21 @@ h1{
   
     .img-hover-zoom{
       height: 540px;
-      width: 720px;
+      width: 630px;
       position: relative;
       left: 0px;
     }
 
     p{
-        width: 225vw;
+        width: 540px;
         padding: 90px 45px 90px 45px;
         color: white;
         background-color: rgba(54, 54, 54, 0.658) ;
        
         position: absolute;
         top: 1220px;
-        left: 0px ;
-        height: 300vh;
+        left: 90px ;
+        height: 2160px;
         font-size: 40.5px;
         letter-spacing: 2.5px;
         line-height: 60px;
