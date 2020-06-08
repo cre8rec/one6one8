@@ -1,0 +1,326 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+body {
+  position: absolute;
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 100vh;
+   
+    background: white;
+    background-image: linear-gradient(lightgrey .1em, transparent .1em), linear-gradient(90deg, lightgrey  .1em, transparent .1em);
+    background-size: 90px 90px;
+    font-family: 'Raleway', sans-serif; 
+    overflow-y: hidden;
+  }
+  
+.home{
+    position: relative;
+    left: 28px;
+    top: 32px;
+  }
+
+.logo{
+  width:180px;
+  height:90px
+}
+
+.logo img{
+  
+  transition: transform .5s ease;
+}
+
+.logo:hover img{
+  transform: rotateY(180deg);
+}
+
+
+.dropdown{
+  width: 90px;
+  height: 90px;
+  /* background-color: yellowgreen; */
+  position: absolute;
+  top: 0;
+  left:720px;
+  transition: transform 2s ease;
+}
+
+.dropdown:hover{
+  transform: scaleX(3);
+
+}
+/* 
+font-family: 'Metrophobic', sans-serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+
+.frontpage{
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+}
+
+
+
+.article{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+  margin: 90px 0px 0px 90px ;
+  width: 540px;
+}
+
+
+
+.hero{
+  position: absolute;
+  top: 180px;
+  left: 90px;
+  
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.title{
+  position: absolute;
+  top: 50px;
+  color: transparent;
+
+}
+
+.date{
+  position: absolute;
+  top: 0px;
+  color: transparent;
+}
+
+
+
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 180px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  object-fit: cover;
+
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.img-hover-zoom:hover .title{
+  color: white;
+}
+  
+.img-hover-zoom:hover .date{
+  color: white;
+}
+
+.img-hover-zoom:hover .overlay{
+  background-color: black;
+}
+
+  
+.two{
+  width: 180px;
+  position: absolute;
+  top: 270px;
+  left: 720px;
+}
+
+.three{
+  
+  position: absolute;
+  top: 180px;
+  left: 1080px;
+}
+
+
+
+
+
+
+
+.switch {
+  display: inline-block;
+  height: 90px;
+  position: fixed;
+  width: 90px;
+  left: 270px;
+  top: 90px;
+
+  
+  
+}
+
+.switch input {
+  display:none;
+  
+  
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  display: none;
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  
+}
+
+input:checked + .slider {
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: -6px -6px 15px rgb(75, 75, 75),
+  6px 6px 10px 0 rgba(255, 255, 255, 0.3);
+  
+  
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: white;
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  
+}
+
+.slider.round {
+  border-radius: 0px;
+  background-color: white;
+  box-shadow:
+  6px 6px 10px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.slider.round:hover{
+  box-shadow:
+  0px 0px 0px 0 rgba(0, 0, 0, 0.3);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  background-color: rgb(75, 75, 75);
+  background: linear-gradient(45deg,rgb(150, 114, 114, 0.9),  rgb(75, 75, 75, 0.25));
+}
+
+
+
+
+
+
+
+body.dark-mode {
+background-color: rgb(150, 114, 114);
+color: #FFF;
+}
+
+body.light-mode {
+background-color: rgb(75, 75, 75);
+color: #23272A;
+}
+
+
+
+@media screen and (min-width: 480px){
+
+  .slide{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+
+/* this is the screen width */
+
+    width: 135.2vw;
+    
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  
+  .outer-wrapper{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translate(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  
+  
+}
+
+@media screen and (max-width: 480px){
+
+
+  .hero{
+    top: 270px;
+    left: 90px;
+    width: 270px;
+  }
+  .two{
+    left: 180px;
+    top: 540px;
+    width: 180px;
+  }
+
+  .three{
+    top: 810px;
+    width: 270px
+  }
+
+  .four{
+    width:180px;
+    top: 1080px;
+    left: 90px;
+  }
+
+
+}
