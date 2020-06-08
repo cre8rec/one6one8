@@ -166,6 +166,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .four{
+  display: none;
   
   position: absolute;
   top: 270px;
@@ -308,11 +309,13 @@ color: #23272A;
 @media screen and (max-width: 480px){
 
 
+h1{
+  font-size: 100px;
+}
 
-
-
-  
-  body{}
+h2{
+  font-size: 45px;
+}
 
 
 
@@ -326,9 +329,6 @@ color: #23272A;
     width:90px;
   }
 
-  .switch{
-    left: 540px;
-  }
 
 
 .hero{
@@ -348,20 +348,21 @@ color: #23272A;
   .two{
     position: absolute;
     left: 90px ;
-    top: 720px;
+    top: 900px;
     width: 630px
   }
 
   .three{
     position: absolute;
-    top: 1080px;
+    top: 1440px;
     left: 90px;
     width: 630px 
   }
 
   .four{
+    display: none;
     position: absolute;
-    top: 1440px;
+    top: 1980px;
     left: 90px;
     width: 630px 
   }
@@ -376,10 +377,18 @@ color: #23272A;
   .switch {
     display: inline-block;
     height: 180px;
-    position: fixed;
+    position: absolute;
     width: 180px;
     left: 540px;
     top: 90px;
+  }
+
+  .img-hover-zoom{
+    height: 360px;
+  }
+
+  body{
+    overflow-y: scroll;
   }
 }
 

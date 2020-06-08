@@ -1,0 +1,439 @@
+
+
+body {
+    position: absolute;
+      margin: 0;
+      padding: 0;
+      
+      width: 100%;
+      height: 100vh;
+     
+      background: white;
+      background-image: linear-gradient(lightgrey .1em, transparent .1em), linear-gradient(90deg, lightgrey  .1em, transparent .1em);
+      background-size: 90px 90px;
+      font-family: 'Raleway', sans-serif; 
+      overflow-y: hidden;
+      overflow-x: hidden;
+      
+    }
+    
+  .home{
+      position: relative;
+      left: 28px;
+      top: 32px;
+    }
+  
+  .logo{
+    width:180px;
+    height:90px
+  }
+  
+  .logoimg{
+    width: 150px;
+  }
+  
+  .logo img{
+    
+    transition: transform .5s ease;
+  }
+  
+  .logo:hover img{
+    transform: rotateY(180deg);
+  }
+  
+  
+  .dropdown{
+    width: 90px;
+    height: 90px;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    top: 0;
+    left:720px;
+    transition: transform 2s ease;
+  }
+  
+  .dropdown:hover{
+    transform: scaleX(3);
+  
+  }
+  /* 
+  font-family: 'Metrophobic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  */
+  
+  
+  .frontpage{
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+  }
+  
+  
+  
+  .article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    margin: 90px 0px 0px 90px ;
+    width: 540px;
+  }
+  
+  
+  
+  .hero{
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    
+  }
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+  }
+  
+  .title{
+    position: absolute;
+    top: 50px;
+    color: transparent;
+  
+  }
+  
+  .date{
+    position: absolute;
+    top: 0px;
+    color: transparent;
+  }
+  
+  
+  .picture{
+    width: 360px;
+  }
+  
+  /* [1] The container */
+  .img-hover-zoom {
+    height: 180px; /* [1.1] Set it as per your need */
+    width: 360px;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    object-fit: cover;
+  
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+  
+  .img-hover-zoom:hover .title{
+    color: white;
+  }
+    
+  .img-hover-zoom:hover .date{
+    color: white;
+  }
+  
+  .img-hover-zoom:hover .overlay{
+    background-color: black;
+  }
+  
+  .one{
+      position: absolute;
+    top: 270px;
+    left: 270px;
+    width: 180px;
+  }
+    
+p{
+    padding: 44px;
+    color: white;
+    background-color: rgba(54, 54, 54, 0.658) ;
+    width: 360px;
+    position: absolute;
+    top: 79px;
+    left: 632px ;
+    height: 270px;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+    line-height: 18.5px;
+    font-family: 'Raleway', sans-serif
+}
+
+.blogpost{
+    position: absolute;
+    top: 180px;
+    left:540px
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    position: absolute;
+    top: -80px;
+    left: 45px;
+    transform: rotate(270deg);
+}
+
+h1{
+    position: absolute;
+    left: -90px;
+    top:0px;
+}
+  
+  
+  
+  
+  
+  
+  .switch {
+    display: inline-block;
+    height: 90px;
+    position: fixed;
+    width: 90px;
+    left: 270px;
+    top: 90px;
+  
+    
+    
+  }
+  
+  .switch input {
+    display:none;
+    
+    
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    
+  }
+  
+  .slider:before {
+    display: none;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    box-shadow: -6px -6px 15px rgb(75, 75, 75),
+    6px 6px 10px 0 rgba(255, 255, 255, 0.3);
+    
+    
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: white;
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    
+  }
+  
+  .slider.round {
+    border-radius: 0px;
+    background-color: white;
+    box-shadow:
+    6px 6px 10px 0 rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  }
+  
+  .slider.round:hover{
+    box-shadow:
+    0px 0px 0px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    background-color: rgb(75, 75, 75);
+    background: linear-gradient(45deg,rgb(150, 114, 114, 0.9),  rgb(75, 75, 75, 0.25));
+  }
+  
+  
+  body.dark-mode {
+  background-color: rgb(150, 114, 114);
+  color: #FFF;
+  }
+  
+  body.light-mode {
+  background-color: rgb(75, 75, 75);
+  color: #23272A;
+  }
+  
+  
+  
+  @media screen and (min-width: 480px){
+  
+    .slide{
+      width: 170.5vw;
+      height: 100vh;
+    }
+    
+    .wrapper{
+      display: flex;
+      flex-direction: row;
+  
+  /* this is the screen width */
+  
+      width: 120vw;
+      
+      transform: rotate(90deg) translateY(-100vh);
+      transform-origin: top left;
+    }
+    
+    .outer-wrapper{
+      width: 100vh;
+      height: 100vw;
+      transform: rotate(-90deg) translate(-100vh);
+      transform-origin: top left;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  
+    ::-webkit-scrollbar{
+      display: none;
+    } 
+    
+  }
+  
+
+  @media screen and (max-width: 500px){
+
+
+
+
+.article{
+    margin: 0;
+    width: 0;
+}
+
+.hero{
+    margin: 0;
+}
+  
+    body{}
+  
+  
+  
+  .picture{
+    width: 630px;
+    
+    
+  }
+  
+    .logo{
+      width:90px;
+    }
+  
+  
+  
+  .hero{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+    .one{
+      position: absolute;
+      top: 360px;
+      left: 90px;
+      width: 630px
+      
+    }
+  
+
+  
+    .logoimg{
+      width: 360px;
+      
+    }
+  
+  
+    .switch {
+      display: inline-block;
+      height: 180px;
+      position: absolute;
+      width: 180px;
+      left: 540px;
+      top: 90px;
+    }
+  
+    .img-hover-zoom{
+      height: 540px;
+      width: 720px;
+      position: relative;
+      left: 0px;
+    }
+
+    p{
+        width: 225vw;
+        padding: 90px 45px 90px 45px;
+        color: white;
+        background-color: rgba(54, 54, 54, 0.658) ;
+       
+        position: absolute;
+        top: 1220px;
+        left: 0px ;
+        height: 300vh;
+        font-size: 40.5px;
+        letter-spacing: 2.5px;
+        line-height: 60px;
+        font-family: 'Raleway', sans-serif
+    }
+  
+    body{
+      overflow-y: scroll;
+    }
+
+    h1{
+        left: -450px;
+        top: 620px;
+        font-size: 100px;
+    }
+
+    h2{
+        position: absolute;
+        transform: rotate(0);
+        font-size: 50px;
+        left: 0px;
+        top: 900px;
+    }
+
+
+  }
+   
+  
+  
+  
