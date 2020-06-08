@@ -28,6 +28,10 @@ body {
   height:90px
 }
 
+.logoimg{
+  width: 150px;
+}
+
 .logo img{
   
   transition: transform .5s ease;
@@ -108,7 +112,9 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-
+.picture{
+  width: 360px;
+}
 
 /* [1] The container */
 .img-hover-zoom {
@@ -141,6 +147,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .one{
+  left: 270px;
   width: 180px;
 }
   
@@ -156,6 +163,13 @@ font-family: 'Raleway', sans-serif;
   position: absolute;
   top: 180px;
   left: 1080px;
+}
+
+.four{
+  
+  position: absolute;
+  top: 270px;
+  left: 1620px;
 }
 
 
@@ -254,10 +268,10 @@ color: #23272A;
 
 
 
-/* @media screen and (min-width: 480px){ */
+@media screen and (min-width: 480px){
 
   .slide{
-    width: 100vw;
+    width: 170.5vw;
     height: 100vh;
   }
   
@@ -267,7 +281,7 @@ color: #23272A;
 
 /* this is the screen width */
 
-    width: 135.2vw;
+    width: 120vw;
     
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
@@ -284,35 +298,36 @@ color: #23272A;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  
+
   ::-webkit-scrollbar{
     display: none;
-  }
-
-
- /*  
+  } 
   
 }
 
 @media screen and (max-width: 480px){
 
-  @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  }
-  
+
+
+
 
   
   body{}
 
-  .frontpage{
-    display: block
-  }
 
 
+.picture{
+  width: 630px;
+  
+  
+}
 
   .logo{
     width:90px;
+  }
+
+  .switch{
+    left: 540px;
   }
 
 
@@ -325,24 +340,49 @@ color: #23272A;
   .one{
     position: absolute;
     top: 360px;
-    width: 360px;
-   
-
+    left: 90px;
+    width: 630px
+    
   }
 
   .two{
     position: absolute;
-    left: -90px ;
+    left: 90px ;
     top: 720px;
-    width: 100vw;
+    width: 630px
   }
 
   .three{
     position: absolute;
     top: 1080px;
-    
+    left: 90px;
+    width: 630px 
+  }
+
+  .four{
+    position: absolute;
+    top: 1440px;
+    left: 90px;
+    width: 630px 
+  }
+
+
+  .logoimg{
+    width: 360px;
     
   }
 
+
+  .switch {
+    display: inline-block;
+    height: 180px;
+    position: fixed;
+    width: 180px;
+    left: 540px;
+    top: 90px;
+  }
 }
- */
+
+ 
+
+
