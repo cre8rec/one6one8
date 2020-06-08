@@ -1,7 +1,4 @@
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
+
 
 body {
   position: absolute;
@@ -16,6 +13,8 @@ body {
     background-size: 90px 90px;
     font-family: 'Raleway', sans-serif; 
     overflow-y: hidden;
+    overflow-x: hidden;
+    
   }
   
 .home{
@@ -141,12 +140,15 @@ font-family: 'Raleway', sans-serif;
   background-color: black;
 }
 
+.one{
+  width: 180px;
+}
   
 .two{
-  width: 180px;
+  width: 270px;
   position: absolute;
   top: 270px;
-  left: 720px;
+  left: 630px;
 }
 
 .three{
@@ -240,11 +242,6 @@ input:checked + .slider:before {
 }
 
 
-
-
-
-
-
 body.dark-mode {
 background-color: rgb(150, 114, 114);
 color: #FFF;
@@ -299,21 +296,35 @@ color: #23272A;
 
 @media screen and (max-width: 480px){
 
+  
+  body{}
+
+  @viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
 
   .hero{
     top: 270px;
-    left: 90px;
+    left: 0;
     width: 270px;
   }
+
+  .one{
+
+  }
+
   .two{
-    left: 180px;
+    left: 90px;
     top: 540px;
     width: 180px;
   }
 
   .three{
     top: 810px;
-    width: 270px
+    width: 270px;
+    left: 90px;
   }
 
   .four{
