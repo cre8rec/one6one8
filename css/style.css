@@ -299,39 +299,43 @@ color: #23272A;
   
   body{}
 
-  @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
+  .frontpage{
+    display: block
   }
 
 
-  .hero{
-    top: 270px;
-    left: 0;
-    width: 270px;
+
+  .logo{
+    width:90px;
   }
+
+
+.hero{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
   .one{
+    position: absolute;
+    top: 360px;
+    width: 360px;
+   
 
   }
 
   .two{
-    left: 90px;
-    top: 540px;
-    width: 180px;
+    position: absolute;
+    left: -90px ;
+    top: 720px;
+    width: 100vw;
   }
 
   .three{
-    top: 810px;
-    width: 270px;
-    left: 90px;
-  }
-
-  .four{
-    width:180px;
+    position: absolute;
     top: 1080px;
-    left: 90px;
+    
+    
   }
-
 
 }
