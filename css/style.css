@@ -328,6 +328,8 @@ h2{
 
   .logo{
     width:90px;
+    position: relative;
+    top: 8px;
   }
 
 

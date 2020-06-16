@@ -356,6 +356,8 @@ h1{
   
     .logo{
       width:90px;
+      position: relative;
+    top: 8px;
     }
   
   
