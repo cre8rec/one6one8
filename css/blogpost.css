@@ -420,9 +420,12 @@ h1{
 
     h1{
         left: -450px;
-        top: 620px;
+        top: 660px;
         font-size: 100px;
+        line-height: 90px;
     }
+
+
 
     h2{
         position: absolute;
@@ -434,6 +437,8 @@ h1{
 
 
   }
+
+  
    
   
   
