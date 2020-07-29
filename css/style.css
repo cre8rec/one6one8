@@ -11,16 +11,29 @@ body {
     background: white;
     background-image: linear-gradient(lightgrey .1em, transparent .1em), linear-gradient(90deg, lightgrey  .1em, transparent .1em);
     background-size: 90px 90px;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Comfortaa', cursive;
     overflow-y: hidden;
     overflow-x: hidden;
+    font-weight: 100;
     
+  }
+
+  h1{
+    font-weight: 100;
+    width: 200px;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
   }
   
 .home{
     position: relative;
     left: 30px;
     top: 30px;
+    cursor: pointer;
+  
   }
 
 .logo{
@@ -86,6 +99,10 @@ font-family: 'Raleway', sans-serif;
   position: absolute;
   top: 180px;
   left: 90px;
+  box-shadow:
+  6px 6px 10px 0 rgba(0, 0, 0, 0.3);
+
+
  
   
 }
@@ -102,6 +119,7 @@ font-family: 'Raleway', sans-serif;
 .title{
   position: absolute;
   top: 50px;
+  left: 10px;
   color: transparent;
 
 }
@@ -109,12 +127,15 @@ font-family: 'Raleway', sans-serif;
 .date{
   position: absolute;
   top: 0px;
+  left: 10px;
   color: transparent;
 }
 
 
 .picture{
   width: 360px;
+
+  height: 360px;
 }
 
 /* [1] The container */
@@ -259,7 +280,7 @@ input:checked + .slider:before {
 
 
 body.dark-mode {
-background-color: rgb(150, 114, 114);
+background-color: rgb(255, 255, 255);
 color: #FFF;
 }
 
@@ -299,6 +320,7 @@ color: #23272A;
     position: absolute;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    top: 90px;
   }
 
   ::-webkit-scrollbar{
@@ -327,9 +349,10 @@ h2{
 }
 
   .logo{
-    width:90px;
-    position: relative;
-    top: 8px;
+    width:100px;
+    position: absolute;
+    top: 0px;
+
   }
 
 
@@ -338,6 +361,8 @@ h2{
   position: absolute;
   top: 0px;
   left: 0px;
+
+  
 }
 
   .one{
